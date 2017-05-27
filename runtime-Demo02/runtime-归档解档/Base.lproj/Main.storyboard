@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuF-uT-vCI">
+                                <rect key="frame" x="36" y="70" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3Dh-7A-AVa"/>
+                                </constraints>
+                                <state key="normal" title="获取所有属性"/>
+                                <connections>
+                                    <action selector="getAllVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yd5-rX-ChI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZt-2i-RsD">
+                                <rect key="frame" x="36" y="130" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QDy-jj-nwa"/>
+                                </constraints>
+                                <state key="normal" title="获取所有方法"/>
+                                <connections>
+                                    <action selector="getAllMethods:" destination="BYZ-38-t0r" eventType="touchUpInside" id="arM-SU-WFE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0T-cA-TTs">
+                                <rect key="frame" x="36" y="190" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PvR-Qs-GDw"/>
+                                </constraints>
+                                <state key="normal" title="改变私有变量"/>
+                                <connections>
+                                    <action selector="changeVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7j-RP-BVx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6D2-hO-g2a">
+                                <rect key="frame" x="36" y="240" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ecT-dg-ze0"/>
+                                </constraints>
+                                <state key="normal" title="动态的增加一个属性"/>
+                                <connections>
+                                    <action selector="addVariable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MRi-7b-h0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBK-ga-Uqk">
+                                <rect key="frame" x="36" y="290" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TOD-un-NKG"/>
+                                </constraints>
+                                <state key="normal" title="动态的添加一个方法"/>
+                                <connections>
+                                    <action selector="addNewMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7JJ-ve-lyd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GuF-uT-vCI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hN-Pp-rbL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6D2-hO-g2a" secondAttribute="trailing" constant="20" id="5EZ-Ob-aXA"/>
+                            <constraint firstItem="yBK-ga-Uqk" firstAttribute="top" secondItem="6D2-hO-g2a" secondAttribute="bottom" constant="20" id="6oq-3I-XR6"/>
+                            <constraint firstItem="6D2-hO-g2a" firstAttribute="top" secondItem="q0T-cA-TTs" secondAttribute="bottom" constant="20" id="Bsr-uc-lDx"/>
+                            <constraint firstItem="q0T-cA-TTs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="CRn-qB-FgD"/>
+                            <constraint firstItem="sZt-2i-RsD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CW5-wh-k64"/>
+                            <constraint firstItem="GuF-uT-vCI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="IjO-gX-Aku"/>
+                            <constraint firstItem="q0T-cA-TTs" firstAttribute="top" secondItem="sZt-2i-RsD" secondAttribute="bottom" constant="20" id="KAb-UJ-K8r"/>
+                            <constraint firstItem="6D2-hO-g2a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="KrP-Bs-dRs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="q0T-cA-TTs" secondAttribute="trailing" constant="20" id="Plc-if-1Wi"/>
+                            <constraint firstItem="sZt-2i-RsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="RSz-GJ-GHO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GuF-uT-vCI" secondAttribute="trailing" constant="20" id="UIl-kW-MBa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sZt-2i-RsD" secondAttribute="trailing" constant="20" id="YXk-S8-rAn"/>
+                            <constraint firstItem="sZt-2i-RsD" firstAttribute="top" secondItem="GuF-uT-vCI" secondAttribute="bottom" constant="20" id="gYE-Ru-QJE"/>
+                            <constraint firstItem="6D2-hO-g2a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o38-1d-GWE"/>
+                            <constraint firstItem="q0T-cA-TTs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tKs-6F-g7G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yBK-ga-Uqk" secondAttribute="trailing" constant="20" id="uYG-rE-Edw"/>
+                            <constraint firstItem="yBK-ga-Uqk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="xe0-bR-q1U"/>
+                            <constraint firstItem="GuF-uT-vCI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="yDc-0g-90q"/>
+                            <constraint firstItem="yBK-ga-Uqk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zxJ-K6-jTE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
